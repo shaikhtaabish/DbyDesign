@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>DRIVEN BY DESIGN</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			/*font-family:Helvetica Neue ,Helvetica,Arial,sans-serif; ;*/
+			font-family: poppins;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		.fullscreenimage {
+			width: 1140px
+		}
+
+		.top {
+			width: 100%;
+			background-color: #F05858;
+			color: #fff;
+		}
+
+		.content {
+			max-width: 700px;
+			margin: 0 auto;
+		}
+
+		.top .content {
+			padding-top: 50px;
+			padding-bottom: 50px;
+			font-weight: 300;
+			font-size: 30px;
+		}
+
+		.top .content .compatibility {
+			float: right;
+			text-align: center;
+			margin-top: -70px;
+		}
+
+		.compatibility .text {
+			font-size: 15px;
+			margin: 10px;
+		}
+
+		h1 {
+			margin-top: 0px;
+			font-weight: 600;
+			color: #41434C;
+			font-size: 22px;
+			text-align: center;
+			margin-top: 1em;
+			text-decoration: underline;
+			text-decoration: none;
+			padding-top: 2em;
+		}
+
+		h5 {
+			margin-top: 0px;
+			font-weight: 600;
+			color: #4E4E4E;
+			font-size: 32px;
+			text-align: center;
+			margin-top: 1em;
+			text-decoration: underline;
+			padding-top: 1em;
+
+		}
+
+		h2 {
+			font-size: 18px;
+			font-weight: 800;
+			color: #4E4E4E;
+		}
+
+		form {
+			margin-top: -72px;
+			margin-bottom: 20px;
+			box-shadow: 0 0px 0px 0px;
+			position: relative;
+			background-color: white;
+			padding-top: 7%;
+			padding-bottom: 7%;
+		}
+
+		.content1 {
+			max-width: 1100px;
+			margin: 0 auto;
+			display: flex;
+			padding-bottom: 5em;
+
+
+		}
+
+		.seconddcontainer {
+			max-width: 700px;
+			margin: 0 auto;
+			text-align: center;
+			;
+			margin-top: 3%;
+		}
+
+		.thirdcontainer {
+			max-width: 700px;
+			margin: 0 auto;
+			text-align: center;
+			;
+			margin-top: 3%;
+			background-color: #EEEEEE;
+		}
+
+		.thirdheadding {
+			font-size: 32px;
+			line-height: 46px;
+			font-weight: 600;
+			padding-top: 5%;
+		}
+
+		.thirdheadding2 {
+			font-size: 32px;
+			line-height: 46px;
+			font-weight: 600;
+		}
+
+		.thirdpara {
+			font-size: 20px;
+			line-height: 46px;
+			padding-bottom: 50px;
+		}
+
+		.thirdpara3 {
+			font-size: 20px;
+			line-height: 24px;
+			margin-top: 2%;
+		}
+
+		.thirdpara4 {
+			font-size: 20px;
+			line-height: 46px;
+			padding-bottom: 8%
+		}
+
+		}
+
+		input {
+			border: 1px solid #ccc;
+			padding: 10px;
+			outline: none;
+			font-size: 14px;
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			border-radius: 6px;
+			width: 254px;
+			margin: 7px;
+			margin-bottom: 15px;
+		}
+
+		.clr {
+			clear: both;
+		}
+
+		code,
+		samp,
+		kbd {
+			font-family: "Courier New", Courier, monospace, sans-serif;
+			text-align: left;
+			color: #555;
+		}
+
+		pre code {
+			line-height: 1.6em;
+			font-size: 11px;
+		}
+
+		pre {
+			padding: 0.1em 0.5em 0.3em 0.7em;
+			border-left: 11px solid #ccc;
+			margin: 1.7em 0 1.7em 0.3em;
+			overflow: auto;
+			width: 93%;
+			text-align: left;
+			font-size: 14px;
+			background-color: #4E4E4E;
+			color: #fff;
+		}
+
+		/* target IE7 and IE6 */
+
+		*:first-child+html pre {
+			padding-bottom: 2em;
+			overflow-y: hidden;
+			overflow: visible;
+			overflow-x: auto;
+		}
+
+		* html pre {
+			padding-bottom: 2em;
+			overflow: visible;
+			overflow-x: auto;
+		}
+
+		img.author {
+			border-radius: 50%;
+			border: 3px solid #ffffff;
+
+			float: left;
+			margin-right: 10px;
+			margin-bottom: 20px;
+		}
+
+		.compatibility .nagegator {
+			font-size: 11px;
+			float: left;
+			margin: 5px;
+		}
+
+		.subtitle {
+			font-size: 18px;
+		}
+
+		.container12 {
+			width: 100%;
+			max-width: 1280;
+		}
+
+		.sheikh {
+			text-align: center;
+		}
+
+		.w3-button {
+			background-color: #36CC9B;
+			color: white;
+			height: 32px;
+			width: 135px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 18px;
+			margin: 4px 2px;
+			cursor: pointer;
+			margin-top: 40px;
+		}
+
+		p.ex1 {
+			padding: 0px 0px 30px;
+			font-size: 36px;
+			font-weight: bold;
+		}
+
+		.box {
+			background: #f3f3f4;
+			padding: 10px 30px 30px 30px;
+			margin: 20px;
+		}
+
+		.thirdimage {
+			display: inline-block;
+		}
+
+		/* Button D */
+
+		.emailaddress {
+			color: #9B9B9B;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 21px;
+			text-align: left;
+			margin-left: 4%;
+			margin-bottom: -3%;
+			margin-left: 24%;
+		}
+
+		a.w3-button {
+			display: inline-block;
+			padding: 15px 60px;
+			background: #41434C;
+			margin-top: 40px;
+			color: #fff;
+			border-radius: 5px;
+			text-decoration: none;
+			border: none;
+
+			animation-duration: 1s;
+			animation-fill-mode: both;
+			animation-iteration-count: 1;
+		}
+
+		.w3-button:hover {
+			background-color: #2EB589;
+			color: white;
+			text-decoration: none;
+		}
+
+		h2 {
+			font-size: 18px;
+			font-weight: 800;
+			color: #4E4E4E;
+			text-align: center;
+			margin-bottom: 1em;
+			padding-top: 1em;
+		}
+
+
+		.contentlefttext {
+			display: block;
+			padding-top: 5em;
+			padding-right: 14em;
+			padding-left: 3em;
+
+		}
+
+
+		.secondcontentimage {
+			ddisplay: inline-block;
+			padding-top: 2em;
+			padding-right: 1em;
+
+		}
+
+		.emailtext {
+			padding-bottom: 2em;
+		}
+
+		.address {
+			padding-bottom: 2em;
+		}
+
+		.containerfour {
+			display: flex;
+			align-items: center;
+			max-width: 900px;
+			margin: 0 auto;
+		}
+
+		.container5 {
+			display: flex;
+			align-items: center;
+			max-width: 900px;
+			margin: 0 auto;
+		}
+
+		.message {
+			font: 12px Helvetica, Arial, Sans-serif;
+			display: none;
+			width: 100%;
+			padding: 10px;
+			color: #fff;
+		}
+
+		.error {
+			background: red;
+		}
+
+		.mapimage {}
+
+		.success {
+			background: lightgreen;
+		}
+
+		.container3 {
+			max-width: 900px;
+			margin: 0 auto;
+
+			padding-bottom: 1em;
+		}
+
+		.firstboxcontent {
+			display: grid;
+			margin-top: 3em;
+		}
+
+		.firstimage {
+			display: flex;
+			justify-content: space-between;
+			margin-right: 21px;
+			margin-bottom: 13px;
+		}
+
+		.firstbox {
+			width: 100%;
+			max-width: 17em;
+			border: 1px solid lightgrey;
+			margin-left: 1em;
+			margin-top: 2em;
+			margin-top: 1em;
+		}
+
+		position: absolute;
+		cursor: initial;
+		font-style: normal;
+		color: rgb(137, 137, 137);
+		font-size: 14px;
+		margin-top: 20px;
+		margin-left: 15px;
+		padding-left: 5px;
+		padding-right: 5px;
+		background-color: rgb(255, 255, 255);
+
+		.secondbox {
+			width: 100%;
+			max-width: 17em;
+			border: 1px solid lightgrey;
+			margin-left: 1em;
+			margin-top: 2em;
+
+		}
+
+		.sixthsecondline {
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		.sixththirdline {
+			font-size: 20px;
+			font-weight: 600;
+			margin-bottom: 7%;
+		}
+
+		.secondimage {
+			display: flex;
+			justify-content: space-between;
+			margin-right: 21px;
+			margin-bottom: 13px;
+		}
+
+		.secondboxcontent {
+			display: grid;
+			margin-top: 2em;
+		}
+
+		.thirdbox {
+			width: 100%;
+			max-width: 17em;
+			border: 1px solid lightgrey;
+			margin-left: 1em;
+			margin-top: 2em;
+		}
+
+		.thirdimage {
+			display: flex;
+			justify-content: space-between;
+			margin-right: 21px;
+			margin-bottom: 13px;
+		}
+
+		.thirdboxcontent {
+			display: grid;
+			margin-top: 1em;
+		}
+
+		.container3 {
+			display: flex;
+		}
+
+		.secondcontainerhead {
+			font-size: 36px;
+			font-weight: 600;
+			margin-bottom: 30px;
+
+		}
+
+		.secondcontainerpara {
+			font-size: 16px;
+			line-height: 27px;
+		}
+
+		.secondcontainerpara2 {
+			font-size: 16px;
+			line-height: 27px;
+			margin-top: 3%;
+		}
+
+		.secondcontainer3 {
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 27px;
+			margin-top: 8%;
+			margin-bottom: 40px;
+		}
+
+		.forthcontainer {
+			max-width: 700px;
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 2%;
+		}
+
+		.fifthcontainer {
+			max-width: 700px;
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 2%;
+			display: flex;
+		}
+
+		.sixthcontainer {
+			max-width: 700px;
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 2%;
+		}
+
+		.forthleftcontent {
+			display: block;
+			background-color: #EEEEEE;
+		}
+
+		.forthfirstline {
+			font-size: 20px;
+			line-height: 27px;
+		}
+
+		.forthsecondline {
+			font-size: 20px;
+			line-height: 27px;
+			font-weight: 600;
+			margin-bottom: 2%;
+		}
+
+		.flip-card {
+			background-color: transparent;
+			width: 300px;
+			height: 240px;
+			perspective: 1000px;
+		}
+
+		.flip-card-inner {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			text-align: center;
+			transition: transform 0.4s;
+			transform-style: preserve-3d;
+		}
+
+		.flip-card:hover .flip-card-inner {
+			transform: rotateY(180deg);
+		}
+
+		.flip-card-front,
+		.flip-card-back {
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			backface-visibility: hidden;
+		}
+
+		.flip-card-front {
+			background-color: #bbb;
+			color: black;
+			border-radius: 50em;
+			height: 200px;
+			width: 200px;
+		}
+
+		.flip-card-back {
+			background-color: #E7F6FF;
+			color: white;
+			transform: rotateY(180deg);
+			border-radius: 50em;
+		}
+
+		.imagezoom {
+			overflow: hidden;
+		}
+
+		imagezoom {
+			max-width: 100%;
+
+		}
+
+		.imagezoom:hover img {}
+
+		.fifthfirstlinee {
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+
+		.fifthfirstline {
+			margin-top: 24%;
+			margin-bottom: 2%;
+
+		}
+
+		.sixthfourthline {
+			font-size: 20px;
+			line-height: 27px;
+		}
+
+		.sixthfirstline {
+			font-size: 20px;
+			line-height: 27px;
+			margin-bottom: 2%;
+
+		}
+
+		input {
+			border: 1px solid #ccc;
+			padding: 10px;
+			outline: none;
+			font-size: 14px;
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			border-radius: 6px;
+			width: 18em;
+			margin: 10px;
+		}
+
+
+
+		.content3 {
+			max-width: 1100px;
+			margin: 0 auto;
+			display: flex;
+		}
+
+		.content2 {
+			max-width: 1100px;
+			margin: 0 auto;
+			display: flex;
+			padding-bottom: 5em;
+		}
+
+		@media (min-width: 600px) {
+			.secondcontainerpara {
+				font-size: 14px;
+				line-height: 27px;
+			}
+			.secondcontainerhead {
+				font-size: 30px;
+				font-weight: 600;
+				margin-bottom: 30px;
+				margin-top: 12%;
+			}
+			.secondcontainerpara2 {
+				font-size: 14px;
+				line-height: 27px;
+				margin-top: 3%;
+			}
+			.thirdheadding {
+				font-size: 30px;
+				line-height: 46px;
+				font-weight: 600;
+				padding-top: 0;
+			}
+			.thirdpara {
+				font-size: 14px;
+				line-height: 46px;
+				padding-bottom: 50px;
+			}
+			.thirdheadding2 {
+				font-size: 30px;
+				line-height: 46px;
+				font-weight: 600;
+			}
+			.thirdpara3 {
+				font-size: 14px;
+				line-height: 24px;
+				margin-top: 2%;
+			}
+			.thirdpara4 {
+				font-size: 14px;
+				line-height: 46px;
+				padding-bottom: 8%;
+			}
+			.forthfirstline {
+				font-size: 14px;
+				line-height: 27px;
+				margin-top: 8%;
+			}
+			.forthsecondline {
+				font-size: 14px;
+				line-height: 27px;
+				font-weight: 600;
+				margin-bottom: 2%;
+				margin-bottom: 7%;
+
+			}
+			.fifthcontainer {
+				max-width: 850px;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: 2%;
+				display: block;
+			}
+			.forthleftcontent {
+				display: block;
+				background-color: #EEEEEE;
+				margin-bottom: 5%;
+			}
+			.firstcontent {
+				display: block;
+				;
+			}
+			.sixthfirstline {
+				font-size: 14px;
+				line-height: 27px;
+				margin-bottom: 2%;
+			}
+			.sixthsecondline {
+				font-size: 14px;
+				font-weight: 600;
+			}
+			.sixththirdline {
+				font-size: 14px;
+				font-weight: 600;
+				margin-bottom: 7%;
+			}
+			.sixthfourthline {
+				font-size: 14px;
+				line-height: 27px;
+			}
+			.content {
+				max-width: 900px;
+				margin: 0 auto;
+			}
+			.w3-button {
+				background-color: #36CC9B;
+				color: white;
+				height: 100px;
+				width: 834px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 40px;
+				margin: 4px 33px;
+				cursor: pointer;
+				margin-top: 40px;
+				border: none;
+			}
+			.sheikh {
+				text-align: left;
+				color: #9B9B9B;
+   				 font-size: 28px;
+    			font-weight: 500;
+				    line-height: 21px
+			}
+			input {
+				border: 1px solid #ccc;
+				padding: 10px;
+				outline: none;
+				font-size: 46px;
+				-webkit-border-radius: 6px;
+				-moz-border-radius: 6px;
+				border-radius: 6px;
+				height: 80px;
+				margin: 10px;
+				display: block;
+				margin-bottom: 3%;
+				margin-left: 3%;
+			}
+			form {
+				margin-top: 0;
+				margin-bottom: 20px;
+
+				position: relative;
+				background-color: white;
+				padding-top: 7%;
+				padding-bottom: 7%;
+			
+				border-top: 5px solid #5C6BDE;
+   				 border-bottom: 2px solid #1CE8B5;
+
+
+			}
+			.secondlineform {
+				display: block;
+				    padding-left: 30px;
+			}
+
+			p.ex1 {
+				padding: 0px 0px 30px;
+				font-size: 48px;
+				font-weight: bold;
+				margin-left: 2%;
+				text-align: center;
+				    color: black;
+				padding-bottom: 7%;
+			}
+			.name {
+				font-size: 36px;
+				max-width: 811px;
+				margin-left: 33px;
+				margin-right: 33px;
+				margin-bottom: 3%;
+
+			}
+			.js-input-mobile {
+				font-size: 36px;
+				max-width: 811px;
+				margin-left: 33px;
+				margin-right: 33px;
+				margin-bottom: 3%;
+			}
+			.email {
+				font-size: 28px;
+				max-width: 847px;
+			}
+			.fullscreenimage {
+				width: 890px;
+				margin-top: -5%;
+
+			}
+			.fullscreenimage1 {
+				width: 890px;
+
+
+			}
+			.fifthfirstline {
+				margin-top: 0%;
+				margin-bottom: 2%;
+				padding-top: 8%;
+			}
+			.fifthfirstlinee {
+				margin-left: 5%;
+				margin-right: 5%;
+				padding-bottom: 8%;
+			}
+			.logo aos-init aos-animate {
+				margin-top: 10%;
+			}
+			.w3-round {
+				height: 400px;
+				width: 850px;
+			}
+			.seconddcontainer {
+				max-width: 850px;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: 3%;
+			}
+			.thirdcontainer {
+				max-width: 850px;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: 3%;
+				background-color: #EEEEEE;
+			}
+			.socialicons {
+				height: 55px;
+			}
+			.socialicons2 {
+				height: 55px;
+				margin-left: 1%;
+			}
+			.imagecartoon {
+				cursor: pointer;
+				padding-left: 6px;
+				padding-right: 6px;
+				margin-top: 7%;
+			}
+			.firstlineform {
+				display: block;
+			}
+			.emailaddress {
+				color: #9B9B9B;
+				font-size: 28px;
+				font-weight: 500;
+				line-height: 21px;
+				text-align: left;
+				margin-left: 4%;
+				margin-bottom: -3%;
+				padding-bottom: 3%;
+			}
+			.fullscreenimage1 {
+				width: 850px;
+				margin-top: -1%;
+			}
+			.input-group-field2 {
+				padding-left: 0;
+				margin-left: 0px;
+			}
+			.input-group-field3 {
+			padding-left: 0;
+			margin-left: 0px;
+		}
+		.input-group-field4 {
+				padding-left: 0;
+				margin-left: 0px;
+			}
+		}
+
+
+
+
+
+
+
+
+
+		@media (min-width: 1280px) {
+			.fifthfirstlinee {
+				margin-left: 5%;
+				margin-right: 5%;
+				padding-bottom: auto;
+			}
+			.fifthfirstline {
+				margin-top: 19%;
+				margin-bottom: 2%;
+				padding-top: 0px;
+			}
+			.secondcontainerpara {
+				font-size: 18px;
+				line-height: 27px;
+			}
+			.secondcontainerhead {
+				font-size: 36px;
+				font-weight: 600;
+				margin-bottom: 30px;
+			}
+			.secondcontainerpara2 {
+				font-size: 16px;
+				line-height: 27px;
+				margin-top: 3%;
+			}
+			.thirdheadding {
+				font-size: 32px;
+				line-height: 46px;
+				font-weight: 600;
+				padding-top: 5%;
+			}
+			.thirdpara {
+				font-size: 20px;
+				line-height: 46px;
+				padding-bottom: 50px;
+			}
+			.thirdheadding2 {
+				font-size: 32px;
+				line-height: 46px;
+				font-weight: 600;
+			}
+			.thirdpara3 {
+				font-size: 20px;
+				line-height: 24px;
+				margin-top: 2%;
+			}
+			.thirdpara4 {
+				font-size: 20px;
+				line-height: 46px;
+				padding-bottom: 8%;
+			}
+			.forthfirstline {
+				font-size: 20px;
+				line-height: 27px;
+			}
+			.forthsecondline {
+				font-size: 20px;
+				line-height: 27px;
+				font-weight: 600;
+				margin-bottom: 2%;
+			}
+			.fifthcontainer {
+				max-width: 700px;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: 2%;
+				display: flex;
+			}
+			.forthleftcontent {
+				display: block;
+				background-color: #EEEEEE;
+				margin-bottom: 0px;
+			}
+			.sixthfirstline {
+				font-size: 20px;
+				line-height: 27px;
+				margin-bottom: 2%;
+			}
+			.sixthsecondline {
+				font-size: 20px;
+				font-weight: 600;
+			}
+			.sixththirdline {
+				font-size: 20px;
+				font-weight: 600;
+				margin-bottom: 7%;
+			}
+			.sixthfourthline {
+				font-size: 20px;
+				line-height: 27px;
+			}
+			.content {
+				max-width: 700px;
+				margin: 0 auto;
+			}
+			.w3-button {
+				background-color: #36CC9B;
+				color: white;
+				height: 40px;
+				width: 135px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 18px;
+				margin: 4px 2px;
+				cursor: pointer;
+				margin-top: 40px;
+				border: none;
+				border-radius: 3px;
+				font-weight: 700;
+			}
+			.sheikh {
+				text-align: center;
+			}
+			input {
+				border: 1px solid #ccc;
+				padding: 10px;
+				outline: none;
+				font-size: 14px;
+				-webkit-border-radius: 6px;
+				-moz-border-radius: 6px;
+				border-radius: 6px;
+				width: 20em;
+				height: auto;
+				margin: 10px;
+				display: initial;
+				margin-left: 13%;
+				margin-bottom: 8%;
+
+			}
+
+			form {
+				margin-top: -13px;
+				margin-bottom: 20px;
+				position: relative;
+				background-color: white;
+				padding-top: 5%;
+				padding-bottom: 7%;
+				display: block;
+				border-top: 5px solid #5C6BDE;
+				border-bottom: 2px solid #1CE8B5;
+				border-radius: 0px;
+			}
+
+			p.ex1 {
+				padding: 0px 0px 30px;
+				font-size: 33px;
+				font-weight: 700;
+				MARGIN-RIGHT: -5%;
+				    color: black;
+			}
+		
+
+		.name {
+			font-size: 14px;
+			max-width: 250px;
+			margin-left: 10px;
+			margin-bottom: 10px;
+			margin-right: 10px;
+		}
+
+		.email {
+			font-size: 14px;
+			max-width: 250px;
+			margin-left: 10px;
+			margin-bottom: 10px;
+			margin-right: 10px;
+		}
+
+		.js-input-mobile {
+			font-size: 14px;
+			max-width: 250px;
+			margin-left: 10px;
+			margin-bottom: 10px;
+			margin-right: 10px;
+		}
+
+		fullscreenimage {
+			width: 1140px
+		}
+
+		.w3-round {
+			height: 200px;
+			width: 330px;
+		}
+
+		.seconddcontainer {
+			max-width: 700px;
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 3%;
+		}
+
+		.thirdcontainer {
+			max-width: 700px;
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 3%;
+			background-color: #EEEEEE;
+		}
+
+		.socialicons {
+			height: 55px;
+		}
+
+		.imagecartoon {
+			cursor: pointer;
+			padding-left: 6px;
+			padding-right: 6px;
+			margin-top: 3%;
+		}
+
+		.fullscreenimage {
+			width: 700px;
+			margin-top: -5%;
+
+		}
+
+		.fullscreenimage1 {
+			width: 700px;
+			margin-top: 0%;
+
+
+		}
+
+		.emailaddress {
+			color: #9B9B9B;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 21px;
+			text-align: left;
+			margin-left: 4%;
+			margin-bottom: -3%;
+			margin-left: 14%;
+			padding-bottom: 0%;
+		}
+
+		.emailaddress1 {
+			color: #9B9B9B;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 21px;
+			text-align: left;
+			margin-left: 4%;
+			margin-bottom: -3%;
+			margin-left: 18%;
+			padding-bottom: 0%;
+		}
+
+		.fullscreenimage1 {
+			width: 700px;
+			margin-top: -1%;
+		}
+
+		.input-group-field2 {
+			padding-left: 1%;
+			margin-left: 18%;
+		}
+		.input-group-field3 {
+			padding-left: 1%;
+			margin-left: 18%;
+		}
+		.input-group-field4 {
+			padding-left: 1%;
+			margin-left: 18%;
+		}
+
+		.firstlineform {
+			display: flex;
+		}
+
+		}
+	</style>
+	<link rel="shortcut icon" type="image/x-icon" href="backgroundd.png" />
+
+</head>
+
+<body>
+
+	<div style="display:flex; justify-content: center; align-items: center;background-color:fff;">
+
+		<img src="webheader.jpg" class="fullscreenimage1" alt style="">
+	</div>
+
+
+
+	<br>
+
+
+
+
+
+
+
+
+	<div class="container12">
+		<div class="content">
+
+			<form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScXzuLjGr0dj3hk6KHpVSSYYQxkpokIbxbtFG93l1AkJLwiqQ/formResponse"
+			    method="post">
+				<div class="sheikh">
+					<p class="ex1">D/D 21.12.19 | REGISTRATION</p>
+					<div class="firstlineform">
+						<div class="firstcontent">
+							<div class="emailaddress" h4="">First Name</div>
+							<input class="input-group-field" type="text" placeholder="" required colors="yellow" required name="entry.2092238618" onkeyup="lettersOnly(This)">
+						</div>
+						<div class="secondlineform">
+							<div class="emailaddress1" h4="">Last Name</div>
+							<input class="input-group-field2" type="text" placeholder="" required colors="yellow" required name="entry.2092238618" onkeyup="lettersOnly(This)">
+						</div>
+					</div>
+
+					<div class="firstlineform">
+						<div class="firstcontent">
+							<div class="emailaddress" h4="">Email</div>
+							<input class="input-group-field" type="email" placeholder="" required colors="yellow" required name="entry.1556369182" onkeyup="lettersOnly(This)">
+						</div>
+						<div class="secondlineform">
+							<div class="emailaddress1" h4="">Contact Number</div>
+							<input class="input-group-field3" type="text" placeholder="" required colors="yellow" required name="entry.1392811460" onkeyup="lettersOnly(This)">
+						</div>
+					</div>
+
+
+
+
+
+					<div class="firstlineform">
+						<div class="firstcontent">
+							<div class="emailaddress" h4="">Designation</div>
+							<input class="input-group-field" type="text" placeholder="" colors="yellow" required name="entry.2092238618" onkeyup="lettersOnly(This)">
+						</div>
+						<div class="secondlineform">
+							<div class="emailaddress1" h4="">Organisation</div>
+							<input class="input-group-field2" type="text" placeholder="" colors="yellow" required name="entry.2092238618" onkeyup="lettersOnly(This)">
+						</div>
+					</div>
+
+
+
+
+
+
+
+					<div class="w3-section">
+						<button class="w3-button w3-block w3-black w3-margin-bottom" type="submit">Submit</button>
+
+					</div>
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='http://google.com';}"></iframe>
+
+					<!-- Update the Google forms URL in action-->
+					<form action="https://fynd.com" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+					</form>
+				</div>
+		</div>
+	</div>
+
+	</style>
+	<link rel="shortcut icon" type="image/x-icon" href="backgroundd.png" />
+
+	</head>
+
+	<body>
+
+		<div style="display:flex; justify-content: center; align-items: center;;">
+
+			<img src="webfooter.jpg" class="fullscreenimage1" alt style="">
+		</div>
+
+
+		<!--<div class="seconddcontainer">
+<div class="secondcontainerhead">"Driven By Design"</div>
+<div class="secondcontainerpara">A community of product creator sharing ideas, beliefs and pain-points while designing tech products. From user research to user journey, from wireframes to high fidelity prototype design is all about the process and its evolution. With each phase there is a learning and growth. Let’s share that learning around so as a community we all can design better products. 
+	</div>
+	<div class="secondcontainerpara2">We are introducing our 1st meetup on<strong> 21st December 2019.	</strong></div> 
+<div class="secondcontainer3">Event Itinerary</div>
+</div>
+
+<div class="thirdcontainer">
+	<img class="imagecartoon" data-aos="fade-up" src="imagee1.png" width="567px" height="319px" style=" "></a>
+	<div class="thirdheadding">“Impact of Design on Business”.</div>
+		<div class="thirdpara">-Harsh Vijay (Founder of Brucira)</div>
+<img class="logo aos-init aos-animate" data-aos="fade-up" src="imagee2.png" width="567px" height="319px" style=" cursor: pointer;padding-left: 6px;padding-right: 6px;"></a>
+			<div class="thirdheadding2">“The Hotstar Sports Bar"</div>
+				<div class="thirdpara3">Gamifying India’s favorite pastime</div>
+					<div class="thirdpara4"> -Ananth Pai (Product Designer at Hotstar)</div>
+
+</div>-->
+
+		<!--<div class="forthcontainer">
+<div class="forthfirstline">Lunch</div>
+<div class="forthsecondline">1:00PM to 2:00PM</div>
+
+</div>-->
+
+		<!--<div class="fifthcontainer">
+	<div class="forthleftcontent">
+<div class="fifthfirstline">Venue</div>
+<div class="fifthfirstlinee">Fynd, WeWork, Vijay Diamond, Cross Rd B, Kondivita, Mumbai</div>
+</div>
+<section class="mapimage">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.763854799701!2d72.86622411528562!3d19.11801285561769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c824a257bfe3%3A0xf74cf4c3e0a99655!2sCross%20Rd%20B%2C%20Andheri%20East%2C%20Mumbai%2C%20Maharashtra%20400093!5e0!3m2!1sen!2sin!4v1575098190658!5m2!1sen!2sin"class="w3-round"
+	 width="350" height="230" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</section>
+</div>-->
+
+		<!--<div class="sixthcontainer">
+	<div class="sixthfirstline">Contact at</div>
+	<div class="sixthsecondline">design@fynd.com</div>
+	<div class="sixththirdline"> +91 8871-366-869</div>
+
+		<div class="sixthfourthline">Connect with Us:</div>
+		<div class="socialmedia" style="
+    padding-top: 1em;
+">
+<a href="https://www.facebook.com/gofynd/">
+<img class="socialicons" data-aos="fade-up" src="facebooks.png" width="auto" height="40" style=" cursor: pointer;"></a>
+<a href="https://www.instagram.com/gofynd/?hl=en">
+<img class="socialicons2" data-aos="fade-up" src="instagrams.png" width="auto" height="40" style=" cursor: pointer;padding-left: 6px;padding-right: 6px;"></a>
+<a href="https://twitter.com/GoFynd?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+
+</div>
+
+<!---->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.placeholder.label.js"></script>
+
+
+
+
+
+
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('input[placeholder]').placeholderLabel();
+			})
+		</script>
+
+
+
+		<script type="text/javascript">
+			var submitted = false;
+		</script>
+
+
+
+
+		<script>
+			// To ensure only valid mobile numbers(7000000000 to 9999999999) are entered
+			$('body').on('keyup', '.input-group-field3', function () {
+				var $input = $(this),
+					value = $input.val(),
+					length = value.length,
+					inputCharacter = parseInt(value.slice(-1));
+
+				if (!((length > 1 && inputCharacter >= 0 && inputCharacter <= 9) || (length === 1 && inputCharacter >= 7 &&
+						inputCharacter <= 9))) {
+					$input.val(value.substring(0, length - 1));
+				}
+			});
+		</script>
+
+
+
+
+
+
+	</body>
+
+</html>
